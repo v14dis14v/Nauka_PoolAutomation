@@ -5,7 +5,7 @@ import mysql.connector
 
 # подключение БД
 # Здесь вместо "*" нужно внести свои данные
-connect = mysql.connector.connect(user="*****", password="*******", host="127.0.0.1", database="******")
+connect = mysql.connector.connect(user="*****", password="*****", host="127.0.0.1", database="*****")
 cursor = connect.cursor(buffered=True)
 
 # создание таблицы
