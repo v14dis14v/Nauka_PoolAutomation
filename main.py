@@ -5,7 +5,7 @@ import mysql.connector
 
 # подключение БД
 # Здесь вместо "*" нужно внести свои данные
-connect = mysql.connector.connect(user="******", password="*****", host="127.0.0.1", database="******")
+connect = mysql.connector.connect(user="*****", password="*******", host="127.0.0.1", database="******")
 cursor = connect.cursor(buffered=True)
 
 # создание таблицы
@@ -113,7 +113,7 @@ class ExampleApp(QtWidgets.QMainWindow, form.Ui_MainWindow):
     def reset(self):
         self.lineEdit.clear()
         self.update()
-        self.update_rows(rows)
+        self.update_table()
 
     def save_data(self):
         # удаляем всё из БД
